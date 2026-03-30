@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainDiv{
+    background-color: #77878B;
+    width: 100vw;
+}
+.innerDiv{
+    border-radius: 2rem;
+    background-color: #373E40;
+    color: white;
+    height: 50vh;
+    min-width: 200px;
+    justify-self: center;
+}
+.input{
+margin: 15px;
+padding: 5px;
+
+}
+.cross{
+border: none;
+position: "relative";
+right: 0;
+top: 0
+}

@@ -1,0 +1,93 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  margin-top: 1em;
+  background-color: rgba(255, 255, 255, 0.463);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 1em 2em;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: black;
+}
+
+.tag {
+  display: flex;
+  gap: 1.5em;
+}
+
+.tag a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: color 0.3s;
+}
+
+.tag a:hover {
+  color: #7e7eee;
+}
+
+.btn1 {
+  padding: 0.6em 1.2em;
+  border-radius: 2em;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn1 i {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn1:hover {
+  background-color: #000;
+  padding-right: 1.5em;
+}
+
+.btn1:hover i {
+  transform: scale(1.4) translate(4px, -4px);
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+}
+
+.logout-btn:hover {
+  background-color: #ff1a1a;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 95%;
+  }
+
+  .tag {
+    display: none;
+  }
+}
